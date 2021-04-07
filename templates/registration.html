@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" type="text/css" href="../static/registration.css">
+    
+</head>
+<body>
+    <div class="main">
+    <header>
+        <h1> Registration form </h1>
+    </header>
+    <form name ="regisf" id="regisform" method="POST">
+        <section class="form_grid">
+
+        <div class="form-control">
+        <label for="username" class="username">User-name :</label>
+        <input type="text" name = "user_name" id="username" class="user-name" placeholder="User-name" name="username" >
+    </div >
+    <div class="form-control">
+        <label for="Email" class="username"> Email : </label>
+        <input type="Email" name = "user_email" class="user-name" id="email"  placeholder="Email"  name="Email"  >
+       
+    </div>
+        <div class="form-control">
+        <label for="password" class="username"> Password :</label>
+        <input type="password" name = "password" class="user-name" id="password" placeholder="Password" name="password" >
+       
+    <!-- </div>
+        <div class="form-control">
+        <label for="confirm password" class="username">ConfirmPassword : </label>
+        <input type="password" class="user-name" id="confirmpassword"    placeholder="confirm password"name="confirmpassword" >
+        
+    </div> -->
+    </section><br><br>
+     <!--    <input type="checkbox" name="age " required>
+        <label for="age"> Are you 13 years above ?</label><br><br>
+         <input type="checkbox" name=" rules " required>
+        <label for="rules"> please accept the <a href="url">TOS and privacy rules </a> </label ><br><br>
+      -->   
+
+        <button type="submit" id="submit" class="submit_grid">Login</button> 
+      </form>
+    </div>
+    <script src="./registration.js"></script>
+
+</body>
+</html>
