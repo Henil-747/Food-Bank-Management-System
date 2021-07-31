@@ -35,7 +35,7 @@
     text-align: center;
    
 }
-h1{
+.heading_top{
     grid-template-columns: auto;
     background-color: rgb(182, 179, 179);
     text-align: center;
@@ -52,8 +52,7 @@ h1{
     column-gap: 20px;
 }
 body{  
-    background-image:linear-gradient(120deg,#2980b9,#8e44ad);
-    
+    background-color: #FFFFFF;
      }
 
 
@@ -84,4 +83,59 @@ margin: 3px;
 
 input:invalid {
     border: 2px solid red;
+}
+
+.message{
+    background-color: red;
+    text-align: left;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  ul {
+    height: 50%;
+    padding: 0px 5px 0px 20px;
+  }
+  
+  a {
+    color: #17a2b8;
+  }
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .btn {
+    outline: none;
+    color: black;
+    background-color: transparent;
+    box-shadow: 0 0 0 0;
+  }
+  
+  .clearfix {
+    margin: 15px;
+  }
+  .form {
+    margin: auto;
+  }
+  
+  .form input, .form select, .form textarea {
+    border-radius: 5px;
+    border: 1px solid #17a2b8;
+    outline: none;
+    background: none;
+    padding: 5px;
+    width: 100%;
   }

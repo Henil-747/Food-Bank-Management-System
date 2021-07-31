@@ -49,7 +49,8 @@ return @cnt;
 end;
 //
 DELIMITER ;
-select donation_count('2021-04-16');
+select donation_count('2021-04-14');
+
 
 
 DELIMITER //

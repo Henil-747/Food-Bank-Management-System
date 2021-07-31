@@ -1,14 +1,13 @@
-CREATE TABLE `user_details` (
-  `user_name` varchar(200) NOT NULL,
-  `user_email` varchar(500) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  PRIMARY KEY (`user_name`),
-  UNIQUE KEY `user_name_UNIQUE` (`user_name`),
-  UNIQUE KEY `user_email_UNIQUE` (`user_email`)
+
+CREATE TABLE `accounts`(
+	`ID` int NOT NULL AUTO_INCREMENT,
+    `USERNAME` varchar(75) NOT NULL,
+    `PASSWORD` varchar(255) NOT NULL,
+	`EMAIL_ID` varchar(100) NOT NULL,
+    PRIMARY KEY (`ID`),
+    UNIQUE KEY `USERNAME_UNIQUE` (`USERNAME`),
+    UNIQUE KEY `EMAIL_ID_UNIQUE` (`EMAIL_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
-
 
 CREATE TABLE `employee` (
   `EMPLOYEE_ID` varchar(45) NOT NULL,
@@ -126,7 +125,3 @@ CREATE TABLE `pulses` (
   PRIMARY KEY (`ITEM_NAME`),
   CONSTRAINT `ITEM_NAME3` FOREIGN KEY (`ITEM_NAME`) REFERENCES `food_bank` (`ITEM_NAME`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
-
-
