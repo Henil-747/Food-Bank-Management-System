@@ -9,9 +9,29 @@
     
 </head>
 <body>
+    {%block content%}    
+        {%with messages = get_flashed_messages()%}
+            {%if messages%}
+                <div style="background-color:#f44336;font-family: sans-serif; color: white; text-align: left;">
+                    <span class="closebtn" style="margin-left: 15px;
+                    color: white;
+                    font-weight: bold;
+                    float: right;
+                    font-size: 22px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    transition: 0.3s;">&times;</span> 
+                <h2>Error!!</h2>
+                {%for msg in messages%}
+                        <h3>{{msg}}</h3>
+                {%endfor%}
+            </div>
+            {%endif%}
+        {%endwith%}
+    {%endblock%}
     <div class="main">
     <header>
-        <h1> Registration form </h1>
+        <h1 class='heading_top'> Registration form </h1>
     </header>
     <form name ="regisf" id="regisform" method="POST">
         <section class="form_grid">
@@ -45,7 +65,17 @@
         <button type="submit" id="submit" class="submit_grid">Login</button> 
       </form>
     </div>
-    <script src="./registration.js"></script>
+    <script>
+        var close = document.getElementsByClassName("closebtn");
+        var i;
 
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+    </script>
 </body>
 </html>
