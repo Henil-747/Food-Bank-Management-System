@@ -52,6 +52,7 @@ DELIMITER ;
 select donation_count('2021-04-14');
 
 
+
 DELIMITER //
 create function donor_count (emp_id varchar(20))
 returns int
@@ -62,7 +63,7 @@ return @cnt;
 end;
 //
 DELIMITER 
-select donor_count('EMP0002');
+select donor_count('EMP0003');
 
 
 DELIMITER //

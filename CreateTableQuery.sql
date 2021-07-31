@@ -9,7 +9,6 @@ CREATE TABLE `accounts`(
     UNIQUE KEY `EMAIL_ID_UNIQUE` (`EMAIL_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
 CREATE TABLE `employee` (
   `EMPLOYEE_ID` varchar(45) NOT NULL,
   `EMPLOYEE_NAME` varchar(50) NOT NULL,
